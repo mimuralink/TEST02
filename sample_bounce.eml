@@ -1,0 +1,29 @@
+From: MAILER-DAEMON@example.com
+To: sender@example.com
+Subject: Undelivered Mail Returned to Sender
+Date: Mon, 1 Jan 2024 00:00:00 +0000
+Content-Type: multipart/report; report-type=delivery-status;
+ boundary="XXXX"
+
+--XXXX
+Content-Type: text/plain; charset=UTF-8
+
+This is the mail system at host example.com.
+
+I'm sorry to have to inform you that your message could not
+be delivered to one or more recipients. It's attached below.
+
+--XXXX
+Content-Type: message/delivery-status
+
+Final-Recipient: rfc822; invalid@example.com
+Action: failed
+Status: 5.1.1
+Diagnostic-Code: smtp; 550 5.1.1 <invalid@example.com>: Recipient address rejected: User unknown
+
+--XXXX
+Content-Type: message/rfc822
+
+[original message]
+
+--XXXX--
